@@ -5,7 +5,7 @@
 *w,,,,,,B524,02010000,,,,,,
 r,,HwcBivalencePoint,,,,,0100,,,tempv,,,Bivalence point hot water heating
 r;w,,ContinousHeating,continous heating,,,,0200,,,tempv,,,"-26=off, when the outside temperature falls below this threshold temperature the continuous heating function is started (off <=> function is disabled)"
-r;w,,FrostOverRideTime,frost delay time,,,,0300,,,hoursum2,,,delay before frost protection is activated
+r;w,,FrostOverrideTime,frost delay time,,,,0300,,,hoursum2,,,delay before frost protection is activated
 r,,xUnknown04,,,,,0400,,,HEX:*,,,
 r;w,,GlobalSystemOff,Global System OFF,,,,0700,,,yesno,,,For switching system off
 r,,xUnknown08,,,,,0800,,,HEX:*,,,
@@ -77,7 +77,7 @@ r,,xUnknown61,,,,,6100,,,HEX:*,,,
 r,,xUnknown65,,,,,6500,,,HEX:*,,,
 r;w,,xUnknown67,(VR70 konfig 1),,,,6700,,,tempv,,,
 r;w,,xUnknown68,(VR70 konfig 1),,,,6800,,,tempv,,,
-r,,xUnknown6A,,,,,6A00,,,HEX:*,,,
+r;w,,MultiInputSetting,multifunction input configuration,,,,6A00,,,UIN,0=not connected;1=1x circulation;2=photovoltaics;3=Ext.Cooling,,
 r;w,,Installer1,installer name 1,,,,6C00,,,STR:*,,,installer's name
 r;w,,Installer2,installer name 2,,,,6D00,,,STR:*,,,installer's name
 r;w,,PhoneNumber1,phone number 1,,,,6F00,,,STR:*,,,installer's telephone number
@@ -108,7 +108,7 @@ r;w,,OutsideTempAvg,average outside temperature,,,,9500,,,tempv,,,rounded averag
 r,,MaintenanceDue,maintenance due,,,,9600,,,yesno,,,shows whether maintenance is due
 r,,xUnknown97,,,,,9700,,,HEX:*,,,
 r,,xUnknown98,,,,,9800,,,HEX:*,,,
-r,,xUnknown9A,,,,,9A00,,,HEX:*,,,
+r,,GreenIQ,,,,,9A00,,,onoff,,,Green IQ mode on thermostat
 r,,xUnknown9B,,,,,9B00,,,HEX:*,,,
 r,,HwcStorageTempTop,hwc storage temperature top,,,,9D00,,,tempv,,,temperature sensor HWC storage top
 r,,HwcStorageTempBottom, storage temperature bottom,,,,9E00,,,tempv,,,temperature sensor HWC storage bottom
@@ -350,7 +350,7 @@ r,,SolarUnknown06,,,,,0600,,,HEX:*,,,
 r,,SolarYieldTemp,,,,,0700,,,tempv,,,
 r,,SolarPump,,,,,0800,,,onoff,,,
 r,,SolarUnknown09,,,,,0900,,,HEX:*,,,
-r,,SolarUnknown0B,,,,,0B00,,,HEX:*,,,
+r,,SolarPumpHours,,,,,0B00,,,hoursum,,,
 # ##### Solar Cylinder 1 #####,,,,,,,,,,,,,
 *r,,,,,,B524,02000500,,,IGN:4,,,
 *w,,,,,,B524,02010500,,,,,,
