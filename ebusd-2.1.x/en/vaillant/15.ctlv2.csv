@@ -31,7 +31,7 @@ r,,xUnknown1B,,,,,1C00,,,HEX:*,,,
 r,,xUnknown1D,,,,,1E00,,,HEX:*,,,
 r;w,,HcAlternativePoint,,,,,2200,,,tempv,,,exclusively alternate heating below alternative point (-21=off)
 r;w,,HcBivalencePoint,,,,,2300,,,tempv,,,Bivalence point heating
-r,,xUnknown24,,,,,2400,,,HEX:*,,,
+r;w,,BackupBoiler,,,,,2400,,,backmode2,,,Function of back-up boiler (Off/Hc/Hwc/Hc+Hwc)
 r,,xUnknown25,,,,,2500,,,HEX:*,,,
 r,,HcEmergencyTemperature,,,,,2600,,,tempv,,,Emergency operation temperature
 r;w,,HwcChargeHysteresis,hysteresis cylinder charge,,,,2700,,,calibrationv,,,hysteris storage tank loading
@@ -51,10 +51,10 @@ r,,DewPointOffset,,,,,3A00,,,tempv,,,Subtract from z1RoomTemp to get dew point
 r,,xUnknown3C,,,,,3C00,,,HEX:*,,,
 r;w,,SolarYieldTotal,total solar yield,,,,3D00,,,energy4,,,solar yield total
 r;w,,YieldTotal,total environmental yield,,,,3E00,,,energy4,,,envrionment yield total
-r;w,,FM5Config,FM5(VR71) configuration,,,,4500,,,UIN,,,FM5(VR71) configuration (needs confirmation!)
+r;w,,ESCOBlockFunction,,,,,4500,,,escomode,,,Function to deactivate when Energy Supply COmpany sends a blocking signal
 r;w,,HwcMaxFlowTempDesired,hwc max flow temp desired,,,,4600,,,tempv,,,maximum flow temperature setpoint of Hwc
 r,,xUnknown47,,,,,4700,,,HEX:*,,,
-r,,xUnknown48,,,,,4800,,,HEX:*,,,
+r,,xUnknown48,,,,,4800,,,HEX:*,,,0100 before SWW run/0300 during SWW run
 r,,xUnknown4A,,,,,4A00,,,HEX:*,,,
 r,,SystemFlowTemp,system flow temp,,,,4B00,,,tempv,,,system flow temperature
 r;w,,MultiRelaySetting,multifunction relay setting,,,,4D00,,,mamode,,,
@@ -85,13 +85,12 @@ r;w,,PhoneNumber2,phone number 2,,,,7000,,,STR:*,,,installer's telephone number
 r;w,,HolidayStartPeriod,holiday start period,,,,7100,,,hfrom,,,start date of holidays
 r;w,,HolidayEndPeriod,holiday end period,,,,7200,,,hto,,,end date of holidays
 r,,DisplayedOutsideTemp,outside temperature,,,,7300,,,tempv,,,outside temperature
-r;w,,SFMode,SF mode,,,,7400,,,sfmode,,,
 r,,xUnknown75,,,,,7500,,,HEX:*,,,
 r;w,,KeyCodeforConfigMenu,code for installer menu,,,,7600,,,UIN,,,000-999; code for the installer's menues
 r,,xUnknown77,,,,,7700,,,HEX:*,,,
 r,,xUnknown7E,,,,,7E00,,,HEX:*,,,
 r,,xUnknown80,,,,,8000,,,HEX:*,,,
-r,,xUnknown81,,,,,8100,,,HEX:*,,,
+r;w,,xUnknown81,,,,,8100,,,HEX:*,,,hex=2041=10=offset from 60C legionella set point?
 r;w,,xHolidayTemp,holiday temperature,,,,8200,,,tempv,,,holiday setpoint
 r;w,,xBankHolidayStartPeriod,bank holiday start period,,,,8300,,,hfrom,,,start date of bank holidays
 r;w,,xBankHolidayEndPeriod,bank holiday end period,,,,8400,,,hto,,,end date of bank holidays
@@ -136,18 +135,18 @@ r,,xUnknownBF,,,,,BF00,,,HEX:*,,,
 *r,,,,,,B524,02000100,,,IGN:4,,,
 *w,,,,,,B524,02010100,,,,,,
 r,,HwcUnknown01,,,,,0100,,,HEX:*,,,
-r,,HwcUnknown02,,,,,0200,,,HEX:*,,,
-r;w,,HwcOpMode,HwcOpMode,,,,0300,,,opmode2,,,operation mode of Hwc
+r;w,,HwcUnknown02,,,,,0200,,,HEX:*,,,0 during heating and 1 during legionella run
+r;w,,HwcOpMode,HwcOpMode,,,,0300,,,opmode2,,,Planning mode of Hwc
 r;w,,HwcTempDesired,Desired Temperature Warm Water Circuit,,,,0400,,,tempv,,,setpoint of domestic hot water circuit
 r,,HwcStorageTemp,HwcStorageTemp,,,,0500,,,tempv,,,current hot water storage temperature
-r,,HwcUnknown06,,,,,0600,,,HEX:*,,,
+r;w,,HwcReheatingActive,,,,,0600,,,onoff,,,0 during heating and 1 during legionella run/SWW run
 r,,HwcUnknown07,,,,,0700,,,HEX:*,,,
 r,,HwcFlowTemp,HwcFlowTemp,,,,0800,,,tempv,,,desired flow temp for Hwc
 r;w,,HwcHolidayStartPeriod,HwcHolidayStartPeriod,,,,0900,,,hfrom,,,start date of holidays
 r;w,,HwcHolidayEndPeriod,HwcHolidayEndPeriod,,,,0A00,,,hto,,,end date of holidays
 r;w,,HwcBankHolidayStartPeriod,HwcHolidayStartPeriod,,,,0B00,,,hfrom,,,start date of bank holidays
 r;w,,HwcBankHolidayEndPeriod,HwcHolidayEndPeriod,,,,0C00,,,hto,,,end date of bank holidays
-r;w,,HwcSFMode,HwcSFMode,,,,0D00,,,sfmode,,,
+r;w,,HwcSFMode,HwcSFMode,,,,0D00,,,sfmode,,,valid are at least:auto/onedayaway/load
 r,,HwcUnknown0E,,,,,0E00,,,HEX:*,,,
 r,,HwcUnknown0F,,,,,0F00,,,HEX:*,,,
 r,,HwcUnknown10,,,,,1000,,,HEX:*,,,
