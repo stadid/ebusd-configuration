@@ -51,7 +51,7 @@ r,,DewPointOffset,,,,,3A00,,,tempv,,,Subtract from z1RoomTemp to get dew point
 r,,xUnknown3C,,,,,3C00,,,HEX:*,,,
 r;w,,SolarYieldTotal,total solar yield,,,,3D00,,,energy4,,,solar yield total
 r;w,,YieldTotal,total environmental yield,,,,3E00,,,energy4,,,envrionment yield total
-r;w,,ESCOBlockFunction,,,,,4500,,,escomode,,,Function to deactivate when Energy Supply COmpany sends a blocking signal
+r;w,,ESCOBlockFunction,,,,,4500,,,escomode,,,Function to deactivate when Energy Supply Company sends a blocking signal
 r;w,,HwcMaxFlowTempDesired,hwc max flow temp desired,,,,4600,,,tempv,,,maximum flow temperature setpoint of Hwc
 r,,xUnknown47,,,,,4700,,,HEX:*,,,
 r,,xUnknown48,,,,,4800,,,HEX:*,,,0100 before SWW run/0300 during SWW run
@@ -90,7 +90,7 @@ r;w,,KeyCodeforConfigMenu,code for installer menu,,,,7600,,,UIN,,,000-999; code 
 r,,xUnknown77,,,,,7700,,,HEX:*,,,
 r,,xUnknown7E,,,,,7E00,,,HEX:*,,,
 r,,xUnknown80,,,,,8000,,,HEX:*,,,
-r;w,,xUnknown81,,,,,8100,,,HEX:*,,,hex=2041=10=offset from 60C legionella set point?
+r;w,,xUnknown81,,,,,8100,,,HEX:*,,,
 r;w,,xHolidayTemp,holiday temperature,,,,8200,,,tempv,,,holiday setpoint
 r;w,,xBankHolidayStartPeriod,bank holiday start period,,,,8300,,,hfrom,,,start date of bank holidays
 r;w,,xBankHolidayEndPeriod,bank holiday end period,,,,8400,,,hto,,,end date of bank holidays
@@ -134,12 +134,12 @@ r,,xUnknownBF,,,,,BF00,,,HEX:*,,,
 # ##### hot water circuit #####,,,,,,,,,,,,,
 *r,,,,,,B524,02000100,,,IGN:4,,,
 *w,,,,,,B524,02010100,,,,,,
-r,,HwcUnknown01,,,,,0100,,,HEX:*,,,
-r;w,,HwcUnknown02,,,,,0200,,,HEX:*,,,0 during heating and 1 during legionella run
+r;w,,HwcEnabled,,,,,0100,,,yesno,,,Indicates if Hwc is enabled/disabled
+r,,HwcLegionellaRunActive,,,,,0200,,,yesno,,,Indicates ongoing legionella run
 r;w,,HwcOpMode,HwcOpMode,,,,0300,,,opmode2,,,Planning mode of Hwc
 r;w,,HwcTempDesired,Desired Temperature Warm Water Circuit,,,,0400,,,tempv,,,setpoint of domestic hot water circuit
 r,,HwcStorageTemp,HwcStorageTemp,,,,0500,,,tempv,,,current hot water storage temperature
-r;w,,HwcReheatingActive,,,,,0600,,,onoff,,,0 during heating and 1 during legionella run/SWW run
+r,,HwcReheatingActive,,,,,0600,,,yesno,,,Indicates ongoing hot/legionella water run
 r,,HwcUnknown07,,,,,0700,,,HEX:*,,,
 r,,HwcFlowTemp,HwcFlowTemp,,,,0800,,,tempv,,,desired flow temp for Hwc
 r;w,,HwcHolidayStartPeriod,HwcHolidayStartPeriod,,,,0900,,,hfrom,,,start date of holidays
