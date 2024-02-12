@@ -265,7 +265,7 @@ r;w,,z1Name1,Name Zone 1 Part 1,,,,1700,,,STR:*,,,name of zone 1
 r;w,,z1Name2,Name Zone 1 Part 2,,,,1800,,,STR:*,,,name of zone 1
 r,,z1Unknown19,,,,,1900,,,HEX:*,,,
 r,,z1Unknown1A,,,,,1A00,,,HEX:*,,,
-r;w,,z1HolidayModeStatus,,,,,1B00,,,holidaystatus,,,
+r,,z1Status,,,,,1B00,,,zoneStatus,,,
 r,,z1Unknown1C,,,,,1C00,,,HEX:*,,,
 r,,z1QuickVetoEndTime,Quick Veto End Time Zone 1,,,,1E00,,,HTI,,,manual override end time for zone 1
 r,,z1Unknown20,,,,,2000,,,HEX:*,,,
@@ -306,7 +306,7 @@ r,,z2ActualCoolingRoomTempDesired,Actual Desired Cooling Room Temperature Zone 2
 r;w,,z2Shortname,Shortname Zone 2,,,,1600,,,shortname,,,short name of zone 2
 r;w,,z2Name1,Name Zone 2 Part 1,,,,1700,,,zname,,,name of zone 2
 r;w,,z2Name2,Name Zone 2 Part 2,,,,1800,,,zname,,,name of zone 2
-r;w,,z2HolidayModeStatus,,,,,1B00,,,holidaystatus,,,
+r,,z2Status,,,,,1B00,,,zoneStatus,,,
 r;w,,z2HeatingRoomTempDesiredManualControlled,Desired Heating Room Temperature Zone 2 manual controlled,,,,2200,,,tempv,,,manual controlled desired heating room temperature for zone 2
 r;w,,z2CoolingRoomTempDesiredManualControlled,Desired Cooling Room Temperature Zone 2 manual controlled,,,,2300,,,tempv,,,manual controlled desired cooling room temperature for zone 2
 r,,z2QuickVetoEndTime,Quick Veto End Time Zone 2,,,,1E00,,,HTI,,,manual override end time for zone 2
@@ -334,7 +334,7 @@ r,,z3ActualCoolingRoomTempDesired,Actual Desired Cooling Room Temperature Zone 3
 r;w,,z3Shortname,Shortname Zone 3,,,,1600,,,shortname,,,short name of zone 3
 r;w,,z3Name1,Name Zone 3 Part 1,,,,1700,,,zname,,,name of zone 3
 r;w,,z3Name2,Name Zone 3 Part 2,,,,1800,,,zname,,,name of zone 3
-r;w,,z3HolidayModeStatus,,,,,1B00,,,holidaystatus,,,
+r,,z3Status,,,,,1B00,,,zoneStatus,,,
 r;w,,z3HeatingRoomTempDesiredManualControlled,Desired Heating Room Temperature Zone 3 manual controlled,,,,2200,,,tempv,,,manual controlled desired heating room temperature for zone 3
 r;w,,z3CoolingRoomTempDesiredManualControlled,Desired Cooling Room Temperature Zone 3 manual controlled,,,,2300,,,tempv,,,manual controlled desired cooling room temperature for zone 3
 r,,z3RoomHumidity,,,,,2800,,,EXP,,%,room humidity zone 3
