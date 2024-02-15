@@ -82,8 +82,6 @@ r;w,,Installer1,installer name 1,,,,6C00,,,STR:*,,,installer's name
 r;w,,Installer2,installer name 2,,,,6D00,,,STR:*,,,installer's name
 r;w,,PhoneNumber1,phone number 1,,,,6F00,,,STR:*,,,installer's telephone number
 r;w,,PhoneNumber2,phone number 2,,,,7000,,,STR:*,,,installer's telephone number
-r;w,,HolidayStartPeriod,holiday start period,,,,7100,,,hfrom,,,start date of holidays
-r;w,,HolidayEndPeriod,holiday end period,,,,7200,,,hto,,,end date of holidays
 r,,DisplayedOutsideTemp,outside temperature,,,,7300,,,tempv,,,outside temperature
 r,,xUnknown75,,,,,7500,,,HEX:*,,,
 r;w,,KeyCodeforConfigMenu,code for installer menu,,,,7600,,,UIN,,,000-999; code for the installer's menues
@@ -142,15 +140,15 @@ r,,HwcStorageTemp,HwcStorageTemp,,,,0500,,,tempv,,,current hot water storage tem
 r,,HwcReheatingActive,,,,,0600,,,yesno,,,Indicates ongoing hot/legionella water run
 r,,HwcUnknown07,,,,,0700,,,HEX:*,,,
 r,,HwcFlowTemp,HwcFlowTemp,,,,0800,,,tempv,,,desired flow temp for Hwc
-r;w,,HwcHolidayStartPeriod,HwcHolidayStartPeriod,,,,0900,,,hfrom,,,start date of holidays
-r;w,,HwcHolidayEndPeriod,HwcHolidayEndPeriod,,,,0A00,,,hto,,,end date of holidays
+r;w,,HwcHolidayStartDate,,,,,0900,,,hfrom,,,start date of holidays
+r;w,,HwcHolidayEndDate,,,,,0A00,,,hto,,,end date of holidays
 r;w,,HwcBankHolidayStartPeriod,HwcHolidayStartPeriod,,,,0B00,,,hfrom,,,start date of bank holidays
 r;w,,HwcBankHolidayEndPeriod,HwcHolidayEndPeriod,,,,0C00,,,hto,,,end date of bank holidays
 r;w,,HwcSFMode,HwcSFMode,,,,0D00,,,sfmode,,,valid are at least:auto/onedayaway/load
 r,,HwcUnknown0E,,,,,0E00,,,HEX:*,,,
 r,,HwcUnknown0F,,,,,0F00,,,HEX:*,,,
-r,,HwcUnknown10,,,,,1000,,,HEX:*,,,
-r,,HwcUnknown11,,,,,1100,,,HEX:*,,,
+r;w,,HwcHolidayStartTime,,,,,1000,,,HTI,,,
+r;w,,HwcHolidayEndTime,,,,,1100,,,HTI,,,
 r,,HwcUnknown12,,,,,1200,,,HEX:*,,,
 r,,HwcUnknown13,,,,,1300,,,HEX:*,,,
 # ##### heating circuit 1 #####,,,,,,,,,,,,,
@@ -243,8 +241,8 @@ r;w,,Hc3PumpStatus,PumpStatus Heating Circuit 3,,,,1E00,,,onoff,,,pump status of
 r;w,,z1Unknown00,,,,,0000,,,HEX:*,,,
 r;w,,z1OpModeCooling,Cooling OpMode Zone 1,,,,0100,,,opmode2,,,Cooling operation mode of zone 1
 r;w,,z1CoolingRoomTempDesiredTimeControlled,Desired Cooling Room Temperature Zone 1 time controlled,,,,0200,,,tempv,,,manual controlled desired cooling room temperature for zone 1
-r;w,,z1HolidayStartPeriod,Holiday Period Start Zone 1,,,,0300,,,hfrom,,,start date of holidays for zone 1
-r;w,,z1HolidayEndPeriod,Holiday Period End Zone 1,,,,0400,,,hto,,,end date of holidays for zone 1
+r;w,,z1HolidayStartDate,,,,,0300,,,hfrom,,,start date of holidays for zone 1
+r;w,,z1HolidayEndDate,,,,,0400,,,hto,,,end date of holidays for zone 1
 r;w,,z1HolidayTemp,Holiday Period Target Temperature Zone 1,,,,0500,,,tempv,,,holiday setpoint for zone 1
 r;w,,z1OpModeHeating,Heating OpMode Zone 1,,,,0600,,,opmode2,,,Heating operation mode of zone 1
 #r,,z1Unknown07,,,,,0700,,,HEX:*,,,
@@ -268,8 +266,8 @@ r,,z1Unknown1A,,,,,1A00,,,HEX:*,,,
 r,,z1Status,,,,,1B00,,,zoneStatus,,,
 r,,z1Unknown1C,,,,,1C00,,,HEX:*,,,
 r,,z1QuickVetoEndTime,Quick Veto End Time Zone 1,,,,1E00,,,HTI,,,manual override end time for zone 1
-r,,z1Unknown20,,,,,2000,,,HEX:*,,,
-r,,z1Unknown21,,,,,2100,,,HEX:*,,,
+r;w,,z1HolidayEndTime,,,,,2000,,,HTI,,,end time of holidays for zone 1
+r;w,,z1HolidayStartTime,,,,,2100,,,HTI,,,start time of holidays for zone 1
 r;w,,z1HeatingRoomTempDesiredManualControlled,Desired Heating Room Temperature Zone 1 manual controlled,,,,2200,,,tempv,,,manual controlled desired heating room temperature for zone 1
 r;w,,z1CoolingRoomTempDesiredManualControlled,Desired Cooling Room Temperature Zone 1 manual controlled,,,,2300,,,tempv,,,manual controlled desired cooling room temperature for zone 1
 r,,z1Unknown24,,,,,2400,,,HEX:*,,,
@@ -288,8 +286,8 @@ r,,z1Unknown2E,,,,,2E00,,,HEX:*,,,
 *w,,,,,,B524,02010301,,,,,,
 r;w,,z2OpModeCooling,Cooling OpMode Zone 2,,,,0100,,,opmode2,,,Cooling operation mode of zone 2
 r;w,,z2CoolingRoomTempDesiredTimeControlled,Desired Cooling Room Temperature Zone 2 time controlled,,,,0200,,,tempv,,,manual controlled desired cooling room temperature for zone 2
-r;w,,z2HolidayStartPeriod,Holiday Period Start Zone 2,,,,0300,,,hfrom,,,start date of holidays for zone 2
-r;w,,z2HolidayEndPeriod,Holiday Period End Zone 2,,,,0400,,,hto,,,end date of holidays for zone 2
+r;w,,z2HolidayStartDate,,,,,0300,,,hfrom,,,start date of holidays for zone 2
+r;w,,z2HolidayEndDate,,,,,0400,,,hto,,,end date of holidays for zone 2
 r;w,,z2HolidayTemp,Holiday Period Target Temperature Zone 2,,,,0500,,,tempv,,,holiday setpoint for zone 2
 r;w,,z2OpModeHeating,Heating OpMode Zone 2,,,,0600,,,opmode2,,,Heatingoperation mode of zone 2
 #r;w,,z2DayTemp,Solltemperatur Zone 2,,,,0700,,,tempv,,,day setpoint for zone 2
@@ -310,14 +308,16 @@ r,,z2Status,,,,,1B00,,,zoneStatus,,,
 r;w,,z2HeatingRoomTempDesiredManualControlled,Desired Heating Room Temperature Zone 2 manual controlled,,,,2200,,,tempv,,,manual controlled desired heating room temperature for zone 2
 r;w,,z2CoolingRoomTempDesiredManualControlled,Desired Cooling Room Temperature Zone 2 manual controlled,,,,2300,,,tempv,,,manual controlled desired cooling room temperature for zone 2
 r,,z2QuickVetoEndTime,Quick Veto End Time Zone 2,,,,1E00,,,HTI,,,manual override end time for zone 2
+r;w,,z2HolidayEndTime,,,,,2000,,,HTI,,,end time of holidays for zone 2
+r;w,,z2HolidayStartTime,,,,,2100,,,HTI,,,start time of holidays for zone 2
 r,,z2RoomHumidity,,,,,2800,,,EXP,,%,room humidity zone 2
 # ##### zone 3 #####,,,,,,,,,,,,,
 *r,,,,,,B524,02000302,,,IGN:4,,,
 *w,,,,,,B524,02010302,,,,,,
 r;w,,z3OpModeCooling,Cooling OpMode Zone 3,,,,0100,,,opmode2,,,Cooling operation mode of zone 3
 r;w,,z3CoolingRoomTempDesiredTimeControlled,Desired Cooling Room Temperature Zone 3 time controlled,,,,0200,,,tempv,,,manual controlled desired cooling room temperature for zone 3
-r;w,,z3HolidayStartPeriod,Holiday Period Start Zone 3,,,,0300,,,hfrom,,,start date of holidays for zone 3
-r;w,,z3HolidayEndPeriod,Holiday Period End Zone 3,,,,0400,,,hto,,,end date of holidays for zone 3
+r;w,,z3HolidayStartDate,,,,,0300,,,hfrom,,,start date of holidays for zone 3
+r;w,,z3HolidayEndDate,,,,,0400,,,hto,,,end date of holidays for zone 3
 r;w,,z3HolidayTemp,Holiday Period Target Temperature Zone 3,,,,0500,,,tempv,,,holiday setpoint for zone 3
 r;w,,z3OpModeHeating,Heating OpMode Zone 3,,,,0600,,,opmode2,,,Heating operation mode of zone 3
 #r;w,,z3DayTemp,Solltemperatur Zone 3,,,,0700,,,tempv,,,day setpoint for zone 3
@@ -335,10 +335,12 @@ r;w,,z3Shortname,Shortname Zone 3,,,,1600,,,shortname,,,short name of zone 3
 r;w,,z3Name1,Name Zone 3 Part 1,,,,1700,,,zname,,,name of zone 3
 r;w,,z3Name2,Name Zone 3 Part 2,,,,1800,,,zname,,,name of zone 3
 r,,z3Status,,,,,1B00,,,zoneStatus,,,
+r,,z3QuickVetoEndTime,Quick Veto End Time Zone 3,,,,1E00,,,HTI,,,manual override end time for zone 3
+r;w,,z3HolidayEndTime,,,,,2000,,,HTI,,,end time of holidays for zone 3
+r;w,,z3HolidayStartTime,,,,,2100,,,HTI,,,start time of holidays for zone 3
 r;w,,z3HeatingRoomTempDesiredManualControlled,Desired Heating Room Temperature Zone 3 manual controlled,,,,2200,,,tempv,,,manual controlled desired heating room temperature for zone 3
 r;w,,z3CoolingRoomTempDesiredManualControlled,Desired Cooling Room Temperature Zone 3 manual controlled,,,,2300,,,tempv,,,manual controlled desired cooling room temperature for zone 3
 r,,z3RoomHumidity,,,,,2800,,,EXP,,%,room humidity zone 3
-r,,z3QuickVetoEndTime,Quick Veto End Time Zone 3,,,,1E00,,,HTI,,,manual override end time for zone 3
 # ##### Solar Circuit #####,,,,,,,,,,,,,
 *r,,,,,,B524,02000400,,,IGN:4,,,
 *w,,,,,,B524,02010400,,,,,,
