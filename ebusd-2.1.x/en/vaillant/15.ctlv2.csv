@@ -146,7 +146,7 @@ r;w,,HwcBankHolidayStartPeriod,HwcHolidayStartPeriod,,,,0B00,,,hfrom,,,start dat
 r;w,,HwcBankHolidayEndPeriod,HwcHolidayEndPeriod,,,,0C00,,,hto,,,end date of bank holidays
 r;w,,HwcSFMode,HwcSFMode,,,,0D00,,,sfmode,,,valid are at least:auto/onedayaway/load
 r,,HwcUnknown0E,,,,,0E00,,,HEX:*,,,
-r,,HwcUnknown0F,,,,,0F00,,,HEX:*,,,
+r,,HwcStatus,,,,,0F00,,,zoneStatus,,,
 r;w,,HwcHolidayStartTime,,,,,1000,,,HTI,,,
 r;w,,HwcHolidayEndTime,,,,,1100,,,HTI,,,
 r,,HwcUnknown12,,,,,1200,,,HEX:*,,,
