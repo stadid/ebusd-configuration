@@ -89,9 +89,6 @@ r,,xUnknown77,,,,,7700,,,HEX:*,,,
 r,,xUnknown7E,,,,,7E00,,,HEX:*,,,
 r,,xUnknown80,,,,,8000,,,HEX:*,,,
 r;w,,xUnknown81,,,,,8100,,,HEX:*,,,
-r;w,,xHolidayTemp,holiday temperature,,,,8200,,,tempv,,,holiday setpoint
-r;w,,xBankHolidayStartPeriod,bank holiday start period,,,,8300,,,hfrom,,,start date of bank holidays
-r;w,,xBankHolidayEndPeriod,bank holiday end period,,,,8400,,,hto,,,end date of bank holidays
 r;w,,xUnknown85,(constant 0/inf),,,,8500,,,tempv,,,
 r,,xUnknown86,,,,,8600,,,HEX:*,,,
 r,,xUnknown89,,,,,8900,,,HEX:*,,,

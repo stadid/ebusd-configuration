@@ -116,4 +116,4 @@ wTimeSlotWithTemp,slotIndex;slotCount;slotTimeFrame;slotTemp,,,Complete Slot for
 wTimeSlotWithoutTemp,slotIndex;slotCount;slotTimeFrame;IGN:2,,,Complete slot for writing the time table settings without a temperature.
 rTimeSlotWithTemp,IGN:1;slotTimeFrame;slotTemp,,,Complete Slot for reading the time table settings.
 rTimeSlotWithoutTemp,IGN:1;slotTimeFrame;IGN:2,,,Complete slot for reading the time table settings without a temperature.
-zoneStatus,UIN,0=normal;1=ventilation boost;3=party;4=quick veto;5=one day away from home;6=one day at home;7=holiday away;8=holiday at home;9=load hot water;10=off,,
+zoneStatus,UIN,0=auto;1=ventilation boost;3=party;4=quick veto;5=one day away from home;6=one day at home;7=holiday away;8=holiday at home;9=load hot water;10=off,,
