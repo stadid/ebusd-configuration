@@ -69,7 +69,7 @@ r,,MA2output,,,,,7E03FFFF,,,onoff,,,Multifunction output 2: Circulation pump; an
 r,,MA0output,,,,,7F03FFFF,,,onoff,,,Multifunction output 0,,,,,,,,,,,,,,,,,,
 r,,hmuUnknownFFFF80,,,,,8003FFFF,,,HEX:*,,,,,,,,,,,,,,,,,,,,,
 r,,CondensorInletTemp,,,,,8103FFFF,,,temps2,10,°C,Condensor inlet temperature (°C),,,,,,,,,,,,,,,,,,
-r,,SupplyTempImmersionHeater,,,,,8203FFFF,,,temps2,10,°C,Supply temperature electric heater (°C),,,,,,,,,,,,,,,,,,
+#r,,SupplyTempImmersionHeater,,,,,8203FFFF,,,temps2,10,°C,Supply temperature electric heater (°C),,,,,,,,,,,,,,,,,,stability issues?
 # tried until 8F03FFFF,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 # Total heating yields (only registers 01 and 02) ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 *r,,,,,,B516,18,,,IGN:1,,,,,,,,,,,,,,,,,,,,,
@@ -140,18 +140,18 @@ r,,TotalHours,,,,,FF3240,,,UIN,,hours,,,,,,,,,,,,,,,,,,,
 r,,HcHours,,,,,FF3241,,,UIN,,hours,,,,,,,,,,,,,,,,,,,
 r,,CoolingHours,,,,,FF3243,,,UIN,,hours,,,,,,,,,,,,,,,,,,,
 r,,HwcHours,,,,,FF3244,,,UIN,,hours,,,,,,,,,,,,,,,,,,,
-r,,ImmersionHeaterHours,,,,,FF3246,,,UIN,,hours,,,,,,,,,,,,,,,,,,,
-r,,TotalEnergyUsageImmersionHeater,,,,,FF3249,,,UIN,,kWh,,,,,,,,,,,,,,,,,,,
-r,,ImmersionHeaterStarts,,,,,FF324A,,,UIN,,,,,,,,,,,,,,,,,,,,,
+#r,,ImmersionHeaterHours,,,,,FF3246,,,UIN,,hours,,,,,,,,,,,,,,,,,,,stability issues?
+#r,,TotalEnergyUsageImmersionHeater,,,,,FF3249,,,UIN,,kWh,,,,,,,,,,,,,,,,,,,stability issues?
+#r,,ImmersionHeaterStarts,,,,,FF324A,,,UIN,,,,,,,,,,,,,,,,,,,,,stability issues?
 r,,PrioritySwitchingValveOps,ThreeWayValve?,,,,FF324B,,,UIN,,,,,,,,,,,,,,,,,,,,,
-r,,ImmersionHeaterPower,,,,,FF324C,,,D1B,10,kW,in kW,,,,,,,,,,,,,,,,,,
+#r,,ImmersionHeaterPower,,,,,FF324C,,,D1B,10,kW,in kW,,,,,,,,,,,,,,,,,,stability issues?
 r,,TotalEnergyUsage,,,,,FF324D,,,energy,,kWh,,,,,,,,,,,,,,,,,,,
-r,,ImmersionHeaterTemp,,,,,FF325C,,,temps2,10,°C,,,,,,,,,,,,,,,,,,,
+#r,,ImmersionHeaterTemp,,,,,FF325C,,,temps2,10,°C,,,,,,,,,,,,,,,,,,,stability issues?
 # tried until FF326F ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 # FF33xx: ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 r;w,,MainsBlocktimeMinDuration,,,,,FF3319,,,UCH,,min,Minimum block time duration (in minutes),,,,,,,,,,,,,,,,,,
 r;w,,ActiveCoolingEnabled,,,,,FF331B,,,yesno,,,Active Cooling technology enabled,,,,,,,,,,,,,,,,,,
-r,,ImmersionHeaterMode,,,,,FF331E,,,UCH,0=off;1=on,,Immersion heater mode (on/off),,,,,,,,,,,,,,,,,,
+#r,,ImmersionHeaterMode,,,,,FF331E,,,UCH,0=off;1=on,,Immersion heater mode (on/off),,,,,,,,,,,,,,,,,,stability issues?
 r;w,,CompressorCurrentLimit,,,,,FF331F,,,UCH,,A,Compressor Electric Current limitation (A),,,,,,,,,,,,,,,,,,
 # FF34xx: ,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,
 r,,CompressorHours,,,,,FF3400,,,UIN,,hours,,,,,,,,,,,,,,,,,,,
