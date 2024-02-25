@@ -248,10 +248,9 @@ r;w,,z1HolidayStartDate,,,,,0300,,,hfrom,,,start date of holidays for zone 1
 r;w,,z1HolidayEndDate,,,,,0400,,,hto,,,end date of holidays for zone 1
 r;w,,z1HolidayTemp,Holiday Period Target Temperature Zone 1,,,,0500,,,tempv,,,holiday setpoint for zone 1
 r;w,,z1OpModeHeating,Heating OpMode Zone 1,,,,0600,,,opmode2,,,Heating operation mode of zone 1
-#r,,z1Unknown07,,,,,0700,,,HEX:*,,,
 r;w,,z1QuickVetoTemp,Quick Veto Temperature Zone 1,,,,0800,,,tempv,,,manual override setpoint for zone 1
 r;w,,z1SetBackTemp,Set Back Temperature Zone 1 (time controlled heating),,,,0900,,,tempv,,,set back setpoint for zone 1
-r;w,,z1SFMode,SFMode Zone 1,,,,0E00,,,sfmode,,,
+r;w,,z1SFMode,SFMode Zone 1,,,,0E00,,,sfmode,,,modes 2=party 4=onedayaway 5=onedayhome officially not supported in VRC720
 r,,z1RoomTemp,Actual Room Temperature Zone 1,,,,0F00,,,tempv,,,aktuelle Raumtemperatur in Zone 1
 r,,z1Unknown10,,,,,1000,,,HEX:*,,,
 r,,z1Unknown11,,,,,1100,,,HEX:*,,,
@@ -291,10 +290,9 @@ r;w,,z2HolidayStartDate,,,,,0300,,,hfrom,,,start date of holidays for zone 2
 r;w,,z2HolidayEndDate,,,,,0400,,,hto,,,end date of holidays for zone 2
 r;w,,z2HolidayTemp,Holiday Period Target Temperature Zone 2,,,,0500,,,tempv,,,holiday setpoint for zone 2
 r;w,,z2OpModeHeating,Heating OpMode Zone 2,,,,0600,,,opmode2,,,Heatingoperation mode of zone 2
-#r;w,,z2DayTemp,Solltemperatur Zone 2,,,,0700,,,tempv,,,day setpoint for zone 2
 r;w,,z2QuickVetoTemp,Quick Veto Temperature Zone 2,,,,0800,,,tempv,,,manual override setpoint for zone 2
 r;w,,z2SetBackTemp,Set Back Temperature Zone 2 (time controlled heating),,,,0900,,,tempv,,,set back setpoint for zone 2
-r;w,,z2SFMode,SFMode Zone 2,,,,0E00,,,sfmode,,,
+r;w,,z2SFMode,SFMode Zone 2,,,,0E00,,,sfmode,,,modes 2=party 4=onedayaway 5=onedayhome officially not supported in VRC720
 r,,z2RoomTemp,Actual Room Temperature Zone 2,,,,0F00,,,tempv,,,aktuelle Raumtemperatur in Zone 2
 r;w,,z2ValveStatus,Valve Status Zone 2,,,,1200,,,UCH,,,valve status of zone 2
 r;w,,z2RoomZoneMapping,Raumregler Zuordnung Zone 2,,,,1300,,,zmapping,,,configures which room temperature is assigned to zone 2
@@ -319,10 +317,9 @@ r;w,,z3HolidayStartDate,,,,,0300,,,hfrom,,,start date of holidays for zone 3
 r;w,,z3HolidayEndDate,,,,,0400,,,hto,,,end date of holidays for zone 3
 r;w,,z3HolidayTemp,Holiday Period Target Temperature Zone 3,,,,0500,,,tempv,,,holiday setpoint for zone 3
 r;w,,z3OpModeHeating,Heating OpMode Zone 3,,,,0600,,,opmode2,,,Heating operation mode of zone 3
-#r;w,,z3DayTemp,Solltemperatur Zone 3,,,,0700,,,tempv,,,day setpoint for zone 3
 r;w,,z3QuickVetoTemp,Quick Veto Temperatur Zone 3,,,,0800,,,tempv,,,manual override setpoint for zone 3
 r;w,,z3SetBackTemp,Set Back Temperature Zone 3 (time controlled heating),,,,0900,,,tempv,,,set back setpoint for zone 3
-r;w,,z3SFMode,SFMode Zone 3,,,,0E00,,,sfmode,,,
+r;w,,z3SFMode,SFMode Zone 3,,,,0E00,,,sfmode,,,modes 2=party 4=onedayaway 5=onedayhome officially not supported in VRC720
 r,,z3RoomTemp,Actual Room Temperature Zone 3,,,,0F00,,,tempv,,,aktuelle Raumtemperatur in Zone 3
 r;w,,z3ValveStatus,Valve Status Zone 3,,,,1200,,,UCH,,,valve status of zone 3
 r;w,,z3RoomZoneMapping,Raumregler Zuordnung Zone 3,,,,1300,,,zmapping,,,configures which room temperature is assigned to zone 3
