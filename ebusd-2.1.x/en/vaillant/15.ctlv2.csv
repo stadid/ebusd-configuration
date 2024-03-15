@@ -411,13 +411,6 @@ r;w,,SolarCyl1SwitchOnDifferential,,,,,0200,,,EXP,,K,charge if the temperature d
 r;w,,SolarCyl1SwitchOffDifferential,,,,,0300,,,EXP,,K,turn charge off if temperature difference between the bottom cylinder temperature sensor and the collector temperature sensor is smaller
 r,,SolarCyl1BottomTemp,,,,,0400,,,tempv,,,bottom cylinder temperature sensor
 # ##### timers #####,,,,,,,,,,,,,
-# reading of time slots: index (specified with -i) denotes slot number (0-11)
-# example to read first heating time slot for Monday: ebusctl r -f -i 0 -c ctlv2 rz1HTimer.Monday
-# example to read second heating time slot for Monday: ebusctl r -f -i 1 -c ctlv2 rz1HTimer.Monday
-# writing of time slots with temperature, payload definition: "slot_index;total_slotnumber_day;start_time;end_time;temperature"
-# example to write first (of two) heating time slot for Monday: ebusctl w -c ctlv2 wz1HTimer.Monday "0;2,00:00;04:00;17.0"
-# example to write second (of two) heating time slot for Monday: ebusctl w -c ctlv2 wz1HTimer.Monday "1;2,04:00;24:00;21.0"
-# Note: all time slots of the day have to be written, also if only one slot is updated!
 *r,,,,,,,,,,,,,
 r,,unknownValue.a0,(3Zones;HWC&CC = constant value. General configuration?),,,B555,a0,,,HEX:*,,,First = Zones maybe? Rest unknown; needs some other configured ctlv2
 # timers hot water,,,,,,,,,,,,,
@@ -425,19 +418,19 @@ r,,unknownValue.a0,(3Zones;HWC&CC = constant value. General configuration?),,,B5
 *w,,,,,,B555,a60002,,,,,,
 r,,hwcTimer.Config,timer Configuration(static atm? describes featue set?),,,B555,a30002,,,HEX:9,,,Configuration
 r,,hwcTimer.TimeSlotsPerWeekday,Configured slot count for each weekday,,,B555,a40002,,,slotCountWeek,,,Amount of configured slots per weekday
-r,,hwcTimer.Monday,timer monday read,,,,00,index,m,UCH,,,,,,rTimeSlotWithTemp
+r,,hwcTimer.Monday,timer monday read,,,,00,index,m,UCH,,,,,,rTimeSlotWithoutTemp
 w,,hwcTimer.Monday,timer monday write,,,,00,,,wTimeSlotWithoutTemp,,,
-r,,hwcTimer.Tuesday,timer tuesday read,,,,01,index,m,UCH,,,,,,rTimeSlotWithTemp
+r,,hwcTimer.Tuesday,timer tuesday read,,,,01,index,m,UCH,,,,,,rTimeSlotWithoutTemp
 w,,hwcTimer.Tuesday,timer tuesday write,,,,01,,,wTimeSlotWithoutTemp,,,
-r,,hwcTimer.Wednesday,timer wednesday read,,,,02,index,m,UCH,,,,,,rTimeSlotWithTemp
+r,,hwcTimer.Wednesday,timer wednesday read,,,,02,index,m,UCH,,,,,,rTimeSlotWithoutTemp
 w,,hwcTimer.Wednesday,timer wednesday write,,,,02,,,wTimeSlotWithoutTemp,,,
-r,,hwcTimer.Thursday,timer thursday read,,,,03,index,m,UCH,,,,,,rTimeSlotWithTemp
+r,,hwcTimer.Thursday,timer thursday read,,,,03,index,m,UCH,,,,,,rTimeSlotWithoutTemp
 w,,hwcTimer.Thursday,timer thursday write,,,,03,,,wTimeSlotWithoutTemp,,,
-r,,hwcTimer.Friday,timer friday read,,,,04,index,m,UCH,,,,,,rTimeSlotWithTemp
+r,,hwcTimer.Friday,timer friday read,,,,04,index,m,UCH,,,,,,rTimeSlotWithoutTemp
 w,,hwcTimer.Friday,timer friday write,,,,04,,,wTimeSlotWithoutTemp,,,
-r,,hwcTimer.Saturday,timer saturday read,,,,05,index,m,UCH,,,,,,rTimeSlotWithTemp
+r,,hwcTimer.Saturday,timer saturday read,,,,05,index,m,UCH,,,,,,rTimeSlotWithoutTemp
 w,,hwcTimer.Saturday,timer saturday write,,,,05,,,wTimeSlotWithoutTemp,,,
-r,,hwcTimer.Sunday,timer sunday read,,,,06,index,m,UCH,,,,,,rTimeSlotWithTemp
+r,,hwcTimer.Sunday,timer sunday read,,,,06,index,m,UCH,,,,,,rTimeSlotWithoutTemp
 w,,hwcTimer.Sunday,timer sunday write,,,,06,,,wTimeSlotWithoutTemp,,,
 # timers circulation pump,,,,,,,,,,,,,
 *r,,,,,,B555,a50003,,,,,,
