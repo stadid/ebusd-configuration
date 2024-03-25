@@ -146,6 +146,7 @@ r,,Hc3MixerMovement,MixerMovement heating circuit 3,,,,1A00,,,EXP,,,"status of m
 r,,Hc3HeatCurveAdaption,HeatCurveAdaption heating circuit 3,,,,1C00,,,EXP,,,adaption applied to heating curve of Hc3
 r;w,,Hc3Status,Status heating circuit 3,,,,1B00,,,UCH,,,status of zone 2
 r;w,,Hc3PumpStatus,PumpStatus heating circuit 3,,,,1E00,,,UIN,,,pump status of zone 3
+# ##### heating circuit 4 #####,,,,,,,,,,,,,
 # ##### zone 1 #####,,,,,,,,,,,,,
 *r,,,,,,B524,02000300,,,IGN:4,,,
 *w,,,,,,B524,02010300,,,,,,
