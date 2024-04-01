@@ -221,7 +221,7 @@ r;w,,Hc1Unknown09,(konstant 60),,,,0900,,,HEX:*,,,
 r;w,,Hc1DewPointOffset,Hc1 Temperature offset from dew point,,,,0A00,,,tempv,,,Dew point temperature margin for Hc1
 r;w,,Hc1ExcessTemp,ExcessTemp Heating Circuit 1,,,,0B00,,,calibrationv,,,excess temperature of Hc1 (flow temperature's setpoint is increased by this value to keep the mixing valve in its control range)
 r;w,,Hc1DesiredTemp,Desired Temperature Heating Circuit 1,,,,0C00,,,tempv,,,
-r;w,,Hc1Unknown0D,(konstant 65),,,,0D00,,,HEX:*,,,
+r;w,,Hc1DesiredSetbackTemp,,,,,0D00,,,tempv,,,target setback temperatur Hc1 (fixed circuit type)
 r;w,,Hc1SetBackMode,,,,,0E00,,,offmode2,,,operation of Hc1 during the setback time
 r;w,,Hc1HeatCurve,Heatcurve Heating Circuit 1,,,,0F00,,,EXP,,,heating curve of Hc1
 r;w,,Hc1MaxHeatingFlowTempDesired,MaxFlowTempDesired Heating Circuit 1,,,,1000,,,tempv,,,maximum heating flow temperature setpoint (end emphasis) of Hc1
@@ -234,7 +234,7 @@ r;w,,Hc1Unknown16,,,,,1600,,,HEX:*,,,
 r;w,,Hc1Unknown17,,,,,1700,,,HEX:*,,,
 r;w,,Hc1Unknown18,,,,,1800,,,HEX:*,,,
 r;w,,Hc1Unknown19,,,,,1900,,,HEX:*,,,
-r,,Hc1MixerMovement,Mixer Position Heating Circuit 1,,,,1A00,,,EXP,,,"status of mixer (<0 closing, >0 opening)"
+r,,Hc1MixerPosition,Mixer Position Heating Circuit 1,,,,1A00,,,EXP,,,"status of mixer (<0 closing, >0 opening)"
 r;w,,Hc1Status,Status Heating Circuit 1,,,,1B00,,,UCH,,,status of zone 1
 r,,Hc1HeatCurveAdaption,Adaptive Heatcurve Heating Circuit 1,,,,1C00,,,EXP,,,adaption applied to heating curve of Hc1
 r;w,,Hc1Unknown1D,,,,,1D00,,,HEX:*,,,
@@ -255,7 +255,7 @@ r,,Hc2FlowTemp,Flow Temperature Heating Circuit 2,,,,0800,,,tempv,,,current flow
 r;w,,Hc2DewPointOffset,Hc1 Temperature offset from dew point,,,,0A00,,,tempv,,,Dew point temperature margin for Hc2
 r;w,,Hc2ExcessTemp,ExcessTemp Heating Circuit 2,,,,0B00,,,calibrationv,,,excess temperature of Hc2 (flow temperature's setpoint is increased by this value to keep the mixing valve in its control range)
 r;w,,Hc2DesiredTemp,Desired Temperature Heating Circuit 2,,,,0C00,,,tempv,,,
-#r;w,,Hc2Unknown0d,(konstant 65) Temperature Heating Circuit 2,,,,0D00,,,tempv,,,
+r;w,,Hc2DesiredSetbackTemp,,,,,0D00,,,tempv,,,target setback temperatur Hc2 (fixed circuit type)
 r;w,,Hc2SetBackMode,,,,,0E00,,,offmode2,,,operation of Hc2 during the setback time
 r;w,,Hc2HeatCurve,Heatingcurve Heating Circuit 2,,,,0F00,,,EXP,,,heating curve of Hc2
 r;w,,Hc2MaxHeatingFlowTempDesired,MaxFlowTempDesired Heating Circuit 2,,,,1000,,,tempv,,,maximum heating flow temperature setpoint (end emphasis) of Hc2
@@ -263,7 +263,7 @@ r;w,,Hc2MinCoolingFlowTempDesired,,,,,1100,,,tempv,,,minimum cooling flow temper
 r;w,,Hc2MinHeatingFlowTempDesired,MinFlowTempDesired Heating Circuit 2,,,,1200,,,tempv,,,minimum heating flow temperature setpoint (end emphasis) of Hc2
 r;w,,Hc2SummerTempLimit,AT-Abschaltgrenz Heating Circuit 2,,,,1400,,,tempv,,,if outside temperature > summer limit => heating is OFF;applies to comfort and night setback setpoint
 r;w,,Hc2RoomTempMod,,,,,1500,,,rcmode2,,,room temperature modulation of Hc2
-r,,Hc2MixerMovement,Mixer Position Heating Circuit 2,,,,1A00,,,EXP,,,"status of mixer (<0 closing, >0 opening)"
+r,,Hc2MixerPosition,Mixer Position Heating Circuit 2,,,,1A00,,,EXP,,,"status of mixer (<0 closing, >0 opening)"
 r,,Hc2HeatCurveAdaption,Adaption of Heatcurve Heating Circuit 2,,,,1C00,,,EXP,,,adaption applied to heating curve of Hc2
 r;w,,Hc2Status,Status Heating Circuit 2,,,,1B00,,,UCH,,,status of zone 2
 r;w,,Hc2PumpStatus,PumpStatus Heating Circuit 2,,,,1E00,,,onoff,,,pump status of zone 2
@@ -280,7 +280,7 @@ r,,Hc3FlowTemp,Flow Temperature Heating Circuit 3,,,,0800,,,tempv,,,current flow
 r;w,,Hc3DewPointOffset,Hc1 Temperature offset from dew point,,,,0A00,,,tempv,,,Dew point temperature margin for Hc3
 r;w,,Hc3ExcessTemp,ExcessTemp Heating Circuit 3,,,,0B00,,,calibrationv,,,excess temperature of Hc3 (flow temperature's setpoint is increased by this value to keep the mixing valve in its control range)
 r;w,,Hc3DesiredTemp,Desired Temperature Heating Circuit 3,,,,0C00,,,tempv,,,
-#r;w,,Hc3Unknown0d,(konstant 65) Temperature Heating Circuit 3,,,,0D00,,,tempv,,,
+r;w,,Hc3DesiredSetbackTemp,,,,,0D00,,,tempv,,,target setback temperatur Hc3 (fixed circuit type)
 r;w,,Hc3SetBackMode,,,,,0E00,,,offmode2,,,operation of Hc3 during the setback time
 r;w,,Hc3HeatCurve,Heatcurve Heating Circuit 3,,,,0F00,,,EXP,,,heating curve of Hc3
 r;w,,Hc3MaxHeatingFlowTempDesired,MaxFlowTempDesired Heating Circuit 3,,,,1000,,,tempv,,,maximum heating flow temperature setpoint (end emphasis) of Hc3
@@ -288,7 +288,7 @@ r;w,,Hc3MinCoolingFlowTempDesired,,,,,1100,,,tempv,,,minimum cooling flow temper
 r;w,,Hc3MinHeatingFlowTempDesired,MinFlowTempDesired Heating Circuit 3,,,,1200,,,tempv,,,minimum heating flow temperature setpoint (end emphasis) of Hc3
 r;w,,Hc3SummerTempLimit,AT-Abschaltgrenze Heating Circuit 3,,,,1400,,,tempv,,,if outside temperature > summer limit => heating is OFF;applies to comfort and night setback setpoint
 r;w,,Hc3RoomTempMod,,,,,1500,,,rcmode2,,,room temperature modulation of Hc3
-r,,Hc3MixerMovement,Mixer Position Heating Circuit 3,,,,1A00,,,EXP,,,"status of mixer (<0 closing, >0 opening)"
+r,,Hc3MixerPosition,Mixer Position Heating Circuit 3,,,,1A00,,,EXP,,,"status of mixer (<0 closing, >0 opening)"
 r,,Hc3HeatCurveAdaption,Adaption of Heatcurve Heating Circuit 3,,,,1C00,,,EXP,,,adaption applied to heating curve of Hc3
 r;w,,Hc3Status,Status Heating Circuit 3,,,,1B00,,,UCH,,,status of zone 3
 r;w,,Hc3PumpStatus,PumpStatus Heating Circuit 3,,,,1E00,,,onoff,,,pump status of zone 3
