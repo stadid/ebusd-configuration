@@ -324,9 +324,9 @@ r;w,,z1HolidayEndTime,,,,,2000,,,HTI,,,end time of holidays for zone 1
 r;w,,z1HolidayStartTime,,,,,2100,,,HTI,,,start time of holidays for zone 1
 r;w,,z1HeatingRoomTempDesiredManualControlled,Desired Heating Room Temperature Zone 1 manual controlled,,,,2200,,,tempv,,,manual controlled desired heating room temperature for zone 1
 r;w,,z1CoolingRoomTempDesiredManualControlled,Desired Cooling Room Temperature Zone 1 manual controlled,,,,2300,,,tempv,,,manual controlled desired cooling room temperature for zone 1
-r,,z1Unknown24,,,,,2400,,,HEX:*,,,
+r,,z1QuickVetoEndDate,end date of Quick Veto mode Zone 1,,,,2400,,,date,,,Quick Veto mode end date Zone 1
 r,,z1Unknown25,,,,,2500,,,HEX:*,,,
-r,,z1Unknown26,,,,,2600,,,HEX:*,,,
+r;w,,z1QuickVetoDuration,Duration of Quick Veto mode in Hours Zone 1,,,,2600,,,EXP,,,valid values are 0.5-12 in 0.5 increments (default 3) writing enables quick veto mode
 r,,z1Unknown27,,,,,2700,,,HEX:*,,,
 r,,z1RoomHumidity,,,,,2800,,,EXP,,%,room humidity zone 1
 r,,z1Unknown29,,,,,2900,,,HEX:*,,,
@@ -357,11 +357,13 @@ r;w,,z2Shortname,Shortname Zone 2,,,,1600,,,shortname,,,short name of zone 2
 r;w,,z2Name1,Name Zone 2 Part 1,,,,1700,,,zname,,,name of zone 2
 r;w,,z2Name2,Name Zone 2 Part 2,,,,1800,,,zname,,,name of zone 2
 r,,z2Status,,,,,1B00,,,zoneStatus,,,
-r;w,,z2HeatingRoomTempDesiredManualControlled,Desired Heating Room Temperature Zone 2 manual controlled,,,,2200,,,tempv,,,manual controlled desired heating room temperature for zone 2
-r;w,,z2CoolingRoomTempDesiredManualControlled,Desired Cooling Room Temperature Zone 2 manual controlled,,,,2300,,,tempv,,,manual controlled desired cooling room temperature for zone 2
 r,,z2QuickVetoEndTime,Quick Veto End Time Zone 2,,,,1E00,,,HTI,,,manual override end time for zone 2
 r;w,,z2HolidayEndTime,,,,,2000,,,HTI,,,end time of holidays for zone 2
 r;w,,z2HolidayStartTime,,,,,2100,,,HTI,,,start time of holidays for zone 2
+r;w,,z2HeatingRoomTempDesiredManualControlled,Desired Heating Room Temperature Zone 2 manual controlled,,,,2200,,,tempv,,,manual controlled desired heating room temperature for zone 2
+r;w,,z2CoolingRoomTempDesiredManualControlled,Desired Cooling Room Temperature Zone 2 manual controlled,,,,2300,,,tempv,,,manual controlled desired cooling room temperature for zone 2
+r,,z2QuickVetoEndDate,end date of Quick Veto mode Zone 2,,,,2400,,,date,,,Quick Veto mode end date Zone 2
+r;w,,z2QuickVetoDuration,Duration of Quick Veto mode in Hours Zone 2,,,,2600,,,EXP,,,valid values are 0.5-12 in 0.5 increments (default 3) writing enables quick veto mode
 r,,z2RoomHumidity,,,,,2800,,,EXP,,%,room humidity zone 2
 # ##### zone 3 #####,,,,,,,,,,,,,
 *r,,,,,,B524,02000302,,,IGN:4,,,
@@ -389,6 +391,8 @@ r;w,,z3HolidayEndTime,,,,,2000,,,HTI,,,end time of holidays for zone 3
 r;w,,z3HolidayStartTime,,,,,2100,,,HTI,,,start time of holidays for zone 3
 r;w,,z3HeatingRoomTempDesiredManualControlled,Desired Heating Room Temperature Zone 3 manual controlled,,,,2200,,,tempv,,,manual controlled desired heating room temperature for zone 3
 r;w,,z3CoolingRoomTempDesiredManualControlled,Desired Cooling Room Temperature Zone 3 manual controlled,,,,2300,,,tempv,,,manual controlled desired cooling room temperature for zone 3
+r,,z3QuickVetoEndDate,end date of Quick Veto mode Zone 3,,,,2400,,,date,,,Quick Veto mode end date Zone 3
+r;w,,z3QuickVetoDuration,Duration of Quick Veto mode in Hours Zone 3,,,,2600,,,EXP,,,valid values are 0.5-12 in 0.5 increments (default 3) writing enables quick veto mode
 r,,z3RoomHumidity,,,,,2800,,,EXP,,%,room humidity zone 3
 # ##### Solar Circuit #####,,,,,,,,,,,,,
 *r,,,,,,B524,02000400,,,IGN:4,,,
