@@ -230,8 +230,8 @@ r;w,,Hc1MinHeatingFlowTempDesired,MinFlowTempDesired Heating Circuit 1,,,,1200,,
 r;w,,Hc1ExtHwcOpMode,ExtHwcOpMode,,,,1300,,,opmode2,,,operation mode of external Hwc circuit
 r;w,,Hc1SummerTempLimit,Switch off temperature threshold Heating Circuit 1,,,,1400,,,tempv,,,if outside temperature > summer limit => heating is OFF;applies to comfort and night setback setpoint
 r;w,,Hc1RoomTempMod,,,,,1500,,,rcmode2,,,room temperature modulation of Hc1
-r;w,,Hc1Unknown16,(konstant 0),,,,1600,,,SIN,,,
-r;w,,Hc1Unknown17,(konstant 0.0),,,,1700,,,EXP,,,
+r;w,,Hc1ScreedDryingDay,,,,,1600,,,UIN,,,current day of screed Hc1 drying schedule (1 to 29 0=screed drying off) 
+r,,Hc1ScreedDryingDesiredTemp,,,,,1700,,,tempv,,,current Hc1 screed drying desired temp
 r,,Hc1ExtHwcActive,,,,,1800,,,onoff,,,
 r,,Hc1ExtHeatDemand,,,,,1900,,,onoff,,,indicator of external heat demand for Hc1
 r,,Hc1MixerPosition,Mixer Position Heating Circuit 1,,,,1A00,,,EXP,,,"status of mixer (<0 closing, >0 opening)"
@@ -264,6 +264,8 @@ r;w,,Hc2MinHeatingFlowTempDesired,MinFlowTempDesired Heating Circuit 2,,,,1200,,
 r;w,,Hc2ExtHwcOpMode,ExtHwcOpMode,,,,1300,,,opmode2,,,operation mode of external Hwc circuit
 r;w,,Hc2SummerTempLimit,AT-Abschaltgrenz Heating Circuit 2,,,,1400,,,tempv,,,if outside temperature > summer limit => heating is OFF;applies to comfort and night setback setpoint
 r;w,,Hc2RoomTempMod,,,,,1500,,,rcmode2,,,room temperature modulation of Hc2
+r;w,,Hc2ScreedDryingDay,,,,,1600,,,UIN,,,current day of Hc2 screed drying schedule (1 to 29 0=screed drying off) 
+r,,Hc2ScreedDryingDesiredTemp,,,,,1700,,,tempv,,,current Hc2 screed drying desired temp
 r,,Hc2ExtHwcActive,,,,,1800,,,onoff,,,
 r,,Hc2ExtHeatDemand,,,,,1900,,,onoff,,,indicator of external heat demand for Hc2
 r,,Hc2MixerPosition,Mixer Position Heating Circuit 2,,,,1A00,,,EXP,,,"status of mixer (<0 closing, >0 opening)"
@@ -292,6 +294,8 @@ r;w,,Hc3MinHeatingFlowTempDesired,MinFlowTempDesired Heating Circuit 3,,,,1200,,
 r;w,,Hc3ExtHwcOpMode,ExtHwcOpMode,,,,1300,,,opmode2,,,operation mode of external Hwc circuit
 r;w,,Hc3SummerTempLimit,AT-Abschaltgrenze Heating Circuit 3,,,,1400,,,tempv,,,if outside temperature > summer limit => heating is OFF;applies to comfort and night setback setpoint
 r;w,,Hc3RoomTempMod,,,,,1500,,,rcmode2,,,room temperature modulation of Hc3
+r;w,,Hc3ScreedDryingDay,,,,,1600,,,UIN,,,current day of Hc3 screed drying schedule (1 to 29 0=screed drying off) 
+r,,Hc3ScreedDryingDesiredTemp,,,,,1700,,,tempv,,,current Hc3 screed drying desired temp
 r,,Hc3ExtHwcActive,,,,,1800,,,onoff,,,
 r,,Hc3ExtHeatDemand,,,,,1900,,,onoff,,,indicator of external heat demand for Hc3
 r,,Hc3MixerPosition,Mixer Position Heating Circuit 3,,,,1A00,,,EXP,,,"status of mixer (<0 closing, >0 opening)"
