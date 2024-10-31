@@ -1,4 +1,9 @@
 # type (r[1-9];w;u),circuit,name,[comment],[QQ],ZZ,PBSB,[ID],field1,part (m/s),datatypes/templates,divider/values,unit,comment
+# Status codes,,,,,,,,,,,,,
+*r,,,,,,B503,00,,,,,,,,,,,,,,,,,,,,,,,,
+*w,,,,,,B503,00,,,,,,,,,,,,,,,,,,,,,,,,
+r,,Statuscode,,,,,03,,,scode,,,
+
 # HC Betriebsart,,,,,,,,,,,,,
 *r,,,,,,"B504",,,,,,,
 r,,DateTime,Datum Uhrzeit,,,,00,,,dcfstate;btime;bdate;temp2,,,
